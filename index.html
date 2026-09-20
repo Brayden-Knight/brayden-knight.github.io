@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brayden Knight — Cloud & Network Engineering portfolio.">
+  <meta name="theme-color" content="#f4f3ef">
+
+  <title>Brayden Knight — Cloud & Network Engineering</title>
+
+  <!-- Tailwind CSS: zero-build static-site setup -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen bg-[#f4f3ef] text-[#111] antialiased">
+
+  <!-- Ambient grain -->
+  <div class="pointer-events-none fixed inset-0 z-50 opacity-[.045] mix-blend-multiply grain"></div>
+
+  <!-- Progress bar -->
+  <div id="progress" class="fixed left-0 top-0 z-[70] h-[2px] w-0 bg-black"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-black/10 bg-[#f4f3ef]/80 backdrop-blur-xl">
+    <div class="mx-auto flex h-[72px] max-w-[1380px] items-center justify-between px-5 sm:px-8 lg:px-12">
+      <a href="#top" class="group flex items-center gap-3">
+        <span class="grid size-9 place-items-center border border-black text-[10px] font-bold tracking-tight transition group-hover:bg-black group-hover:text-white">
+          BK
+        </span>
+        <span class="hidden text-[11px] font-bold tracking-[.14em] sm:block">BRAYDEN KNIGHT</span>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#stack">Stack</a>
+        <a class="nav-link" href="#experience">Experience</a>
+      </nav>
+
+      <a href="#contact" class="group flex items-center gap-2 text-[10px] font-bold tracking-[.13em]">
+        LET'S TALK
+        <span class="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-[1380px] px-5 pb-20 pt-8 sm:px-8 lg:px-12 lg:pb-28 lg:pt-12">
+      <div class="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-black/10 pb-4 text-[9px] font-bold tracking-[.16em] text-black/65">
+        <span>01 / PORTFOLIO</span>
+        <span class="flex items-center gap-2">
+          <i class="size-1.5 rounded-full bg-black"></i>
+          CLOUD + NETWORK ENGINEERING
+        </span>
+      </div>
+
+      <div class="grid items-center gap-12 lg:grid-cols-[1.04fr_.96fr] lg:gap-20">
+        <div data-reveal>
+          <p class="eyebrow mb-5">ENGINEERING THE INFRASTRUCTURE BEHIND THE PRODUCT</p>
+
+          <h1 class="font-display max-w-[850px] text-[clamp(4rem,10vw,9.5rem)] font-semibold leading-[.78] tracking-[-.085em]">
+            CLOUD
+            <span class="outline-text">/</span>
+            NETWORK
+            <span class="serif-italic ml-[7vw] block text-[.62em] font-normal leading-none tracking-[-.065em]">
+              ENGINEER
+            </span>
+          </h1>
+
+          <p class="mt-8 max-w-xl text-[15px] leading-7 text-black/55 sm:text-[17px]">
+            I build reliable infrastructure across cloud, networking, Linux, automation,
+            and security — turning complicated systems into clean, observable platforms.
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-6">
+            <a href="#work" class="magnetic-button inline-flex items-center justify-between gap-8 bg-black px-5 py-4 text-[10px] font-bold tracking-[.13em] text-white transition hover:-translate-y-0.5">
+              VIEW PROJECTS <span>↗</span>
+            </a>
+
+            <a href="#about" class="group inline-flex items-center gap-3 text-[10px] font-bold tracking-[.13em]">
+              ABOUT ME
+              <span class="h-px w-10 bg-black transition-all duration-300 group-hover:w-16"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Manga-inspired technical artwork -->
+        <div class="hero-art relative min-h-[430px] overflow-hidden border border-black shadow-[16px_16px_0_rgba(0,0,0,.07)] sm:min-h-[530px]" data-reveal data-tilt>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_67%_27%,rgba(255,255,255,.9),transparent_23%),linear-gradient(145deg,#deded8,#a9aaa5_55%,#777872)]"></div>
+          <div class="hero-dots absolute inset-0 opacity-50"></div>
+          <div class="hero-scan absolute inset-0 opacity-20"></div>
+
+          <div class="absolute left-5 top-5 z-10 text-[8px] font-bold tracking-[.15em]">SYSTEM / 001</div>
+          <div class="absolute bottom-5 right-5 z-10 text-[8px] font-bold tracking-[.15em] [writing-mode:vertical-rl]">LOCAL • CLOUD • EDGE</div>
+
+          <div class="hero-circle absolute right-[12%] top-[14%] size-[36%] rounded-full border border-black/35 bg-white/40 shadow-[0_0_0_18px_rgba(255,255,255,.07),0_0_0_36px_rgba(255,255,255,.05)]"></div>
+
+          <div class="mountain mountain-1 absolute inset-x-[-5%] bottom-[-3%] h-[60%]"></div>
+          <div class="mountain mountain-2 absolute inset-x-[-8%] bottom-[-3%] h-[45%]"></div>
+          <div class="mountain mountain-3 absolute inset-x-[-10%] bottom-[-3%] h-[32%]"></div>
+
+          <div class="absolute inset-[10%] z-10 border border-black/35">
+            <span class="absolute -left-px top-[-1px] h-px w-16 bg-black"></span>
+            <span class="absolute -right-px bottom-5 h-16 w-px bg-black"></span>
+          </div>
+
+          <div class="absolute left-[9%] top-1/2 z-20 -translate-y-1/2 -rotate-6 text-white drop-shadow-[0_2px_12px_rgba(0,0,0,.35)]">
+            <div class="grid gap-1 text-[9px] font-bold tracking-[.25em]">
+              <span>BUILD</span>
+              <span class="opacity-40">///</span>
+              <span>SHIP</span>
+              <span class="opacity-40">///</span>
+              <span>IMPROVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-7 grid gap-5 border-t border-black/10 pt-5 sm:grid-cols-3">
+        <div class="mini-stat">
+          <span>FOCUS</span>
+          <strong>AWS / LINUX / NETWORKING</strong>
+        </div>
+        <div class="mini-stat">
+          <span>METHOD</span>
+          <strong>AUTOMATE / OBSERVE / HARDEN</strong>
+        </div>
+        <div class="mini-stat sm:text-right">
+          <span>SCROLL</span>
+          <strong class="inline-flex items-center justify-end gap-3">EXPLORE <span>↓</span></strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mx-auto max-w-[1380px] px-5 py-24 sm:px-8 lg:px-12 lg:py-40">
+      <div class="section-head" data-reveal>
+        <span class="section-num">02</span>
+        <div>
+          <p class="eyebrow mb-5">PROFILE</p>
+          <h2 class="font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.88] tracking-[-.07em]">
+            Quiet systems.<br>
+            <span class="serif-italic font-normal">Serious infrastructure.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid gap-10 lg:grid-cols-[1fr_.68fr] lg:gap-24" data-reveal>
+        <div class="max-w-3xl">
+          <p class="text-[clamp(1.5rem,3vw,3rem)] leading-[1.18] tracking-[-.035em]">
+            I'm a U.S. Air Force IT professional focused on cloud and network engineering.
+            My work sits where infrastructure, automation, and security meet.
+          </p>
+          <p class="mt-8 max-w-2xl text-[15px] leading-8 text-black/55">
+            I'm currently building deeper hands-on experience with AWS, Linux, Docker,
+            networking, Terraform, Python, and infrastructure operations — with projects
+            designed to mirror real production environments.
+          </p>
+        </div>
+
+        <div class="halftone-panel relative overflow-hidden border border-black p-7 sm:p-9">
+          <div class="corner top-0 left-0 border-l-2 border-t-2"></div>
+          <div class="corner bottom-0 right-0 border-b-2 border-r-2"></div>
+
+          <p class="eyebrow mb-12">CURRENT DIRECTION</p>
+
+          <h3 class="font-display text-5xl font-semibold leading-[.9] tracking-[-.065em] sm:text-6xl">
+            Cloud &<br>Network<br>Engineering
+          </h3>
+
+          <div class="mt-12 border-t border-black/15">
+            <div class="flex items-center justify-between border-b border-black/15 py-3 text-[9px] font-bold tracking-[.12em]">
+              <span class="text-black/40">01</span><span>INFRASTRUCTURE</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-black/15 py-3 text-[9px] font-bold tracking-[.12em]">
+              <span class="text-black/40">02</span><span>CLOUD ARCHITECTURE</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-black/15 py-3 text-[9px] font-bold tracking-[.12em]">
+              <span class="text-black/40">03</span><span>AUTOMATION</span>
+            </div>
+            <div class="flex items-center justify-between py-3 text-[9px] font-bold tracking-[.12em]">
+              <span class="text-black/40">04</span><span>SECURE OPERATIONS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="border-y border-black/10 bg-[#ecebe6]">
+      <div class="mx-auto max-w-[1380px] px-5 py-24 sm:px-8 lg:px-12 lg:py-40">
+        <div class="section-head" data-reveal>
+          <span class="section-num">03</span>
+          <div>
+            <p class="eyebrow mb-5">SELECTED WORK</p>
+            <h2 class="font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.88] tracking-[-.07em]">
+              Things I'm<br>
+              <span class="serif-italic font-normal">actually building.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+
+          <!-- Featured project -->
+          <article class="project-card group" data-reveal data-tilt>
+            <div class="project-art project-cloud relative min-h-[360px] overflow-hidden lg:min-h-[520px]">
+              <div class="absolute inset-[10%] border border-black/30 bg-[linear-gradient(rgba(0,0,0,.07)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,.07)_1px,transparent_1px)] bg-[size:46px_46px]"></div>
+
+              <div class="absolute left-1/2 top-1/2 grid size-36 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-black bg-[#f4f3ef]/70 shadow-[0_0_0_17px_rgba(255,255,255,.12),0_0_0_34px_rgba(255,255,255,.08)] sm:size-44">
+                <span class="font-display text-2xl font-semibold tracking-[-.04em]">AWS</span>
+                <small class="absolute bottom-7 text-[7px] font-bold tracking-[.18em]">CORE / 01</small>
+              </div>
+
+              <div class="absolute left-[19%] top-[28%] h-px w-[32%] origin-left rotate-[24deg] bg-black/70"></div>
+              <div class="absolute left-[54%] top-[68%] h-px w-[32%] origin-left -rotate-[28deg] bg-black/70"></div>
+              <div class="absolute left-[17%] top-[27%] size-2 rounded-full border border-black bg-[#f4f3ef]"></div>
+              <div class="absolute right-[16%] top-[19%] size-2 rounded-full border border-black bg-[#f4f3ef]"></div>
+              <div class="absolute bottom-[18%] right-[15%] size-2 rounded-full border border-black bg-[#f4f3ef]"></div>
+
+              <span class="absolute bottom-5 left-5 text-[8px] font-bold tracking-[.16em]">INFRASTRUCTURE / OBSERVABILITY / AUTOMATION</span>
+            </div>
+
+            <div class="flex flex-col p-7 sm:p-10 lg:p-12">
+              <div class="flex items-center justify-between text-[9px] font-bold tracking-[.14em] text-black/45">
+                <span>PROJECT 01</span><span>FEATURED</span>
+              </div>
+
+              <h3 class="mt-14 max-w-xl font-display text-4xl font-semibold leading-[.94] tracking-[-.06em] sm:text-5xl">
+                Cloud Infrastructure Monitor
+              </h3>
+
+              <p class="mt-5 max-w-xl text-[14px] leading-7 text-black/55">
+                A local AI-assisted AWS operations project that connects cloud APIs,
+                infrastructure data, documentation, and recommendations into one workflow.
+              </p>
+
+              <div class="mt-7 flex flex-wrap gap-2">
+                <span class="tag">AWS</span><span class="tag">PYTHON</span>
+                <span class="tag">RAG</span><span class="tag">OLLAMA</span>
+              </div>
+
+              <a href="#" class="project-link mt-auto pt-12">
+                VIEW PROJECT <span class="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project pair -->
+          <div class="grid gap-5 lg:grid-cols-2">
+            <article class="project-card group" data-reveal>
+              <div class="project-art relative min-h-[300px] overflow-hidden project-network">
+                <div class="network-node left-[14%] top-[25%]">LAN</div>
+                <div class="network-node left-1/2 top-[52%] -translate-x-1/2">CORE</div>
+                <div class="network-node right-[14%] top-[20%]">EDGE</div>
+                <div class="network-line left-[26%] top-[39%] w-[30%] rotate-[18deg]"></div>
+                <div class="network-line left-[47%] top-[51%] w-[28%] -rotate-[20deg]"></div>
+                <div class="network-line left-[34%] top-[65%] w-[35%] rotate-[29deg]"></div>
+                <span class="absolute bottom-5 left-5 text-[8px] font-bold tracking-[.16em]">NETWORK / ROUTING / SERVICES</span>
+              </div>
+
+              <div class="flex flex-col p-7 sm:p-9">
+                <div class="flex justify-between text-[9px] font-bold tracking-[.14em] text-black/45">
+                  <span>PROJECT 02</span><span>LAB</span>
+                </div>
+                <h3 class="mt-12 font-display text-4xl font-semibold leading-[.94] tracking-[-.06em]">
+                  Private Lab Infrastructure
+                </h3>
+                <p class="mt-5 text-[14px] leading-7 text-black/55">
+                  A local Proxmox environment for reverse proxies, DNS, certificate authorities,
+                  services, and infrastructure experiments.
+                </p>
+                <div class="mt-7 flex flex-wrap gap-2">
+                  <span class="tag">PROXMOX</span><span class="tag">LINUX</span><span class="tag">NGINX</span><span class="tag">PKI</span>
+                </div>
+                <a href="#" class="project-link pt-10">VIEW PROJECT <span>↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card group" data-reveal>
+              <div class="project-art relative min-h-[300px] overflow-hidden bg-[#111] text-white">
+                <div class="absolute inset-[12%] border border-white/20 bg-[linear-gradient(rgba(255,255,255,.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.04)_1px,transparent_1px)] bg-[size:28px_28px] p-5">
+                  <div class="flex gap-1 border-b border-white/10 pb-4">
+                    <i class="size-1.5 rounded-full border border-white/60"></i>
+                    <i class="size-1.5 rounded-full border border-white/60"></i>
+                    <i class="size-1.5 rounded-full border border-white/60"></i>
+                  </div>
+                  <div class="mt-7 grid gap-4 font-mono text-xs">
+                    <span class="opacity-40">terraform</span>
+                    <span class="pl-4">provision()</span>
+                    <span class="pl-8">deploy()</span>
+                    <span class="pl-4">monitor()</span>
+                    <span class="opacity-60">secure()</span>
+                  </div>
+                </div>
+                <span class="absolute bottom-5 left-5 text-[8px] font-bold tracking-[.16em]">AUTOMATION / INFRASTRUCTURE AS CODE</span>
+              </div>
+
+              <div class="flex flex-col p-7 sm:p-9">
+                <div class="flex justify-between text-[9px] font-bold tracking-[.14em] text-black/45">
+                  <span>PROJECT 03</span><span>AUTOMATION</span>
+                </div>
+                <h3 class="mt-12 font-display text-4xl font-semibold leading-[.94] tracking-[-.06em]">
+                  Infrastructure Automation
+                </h3>
+                <p class="mt-5 text-[14px] leading-7 text-black/55">
+                  Reusable workflows using Terraform, Python, Docker, Git, and AWS services
+                  to make infrastructure repeatable.
+                </p>
+                <div class="mt-7 flex flex-wrap gap-2">
+                  <span class="tag">TERRAFORM</span><span class="tag">DOCKER</span><span class="tag">GIT</span><span class="tag">PYTHON</span>
+                </div>
+                <a href="#" class="project-link pt-10">VIEW PROJECT <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="mx-auto max-w-[1380px] px-5 py-24 sm:px-8 lg:px-12 lg:py-40">
+      <div class="section-head" data-reveal>
+        <span class="section-num">04</span>
+        <div>
+          <p class="eyebrow mb-5">STACK</p>
+          <h2 class="font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.88] tracking-[-.07em]">
+            Tools are useful.<br>
+            <span class="serif-italic font-normal">Systems are the goal.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid border-l border-t border-black/10 sm:grid-cols-2" data-reveal>
+        <div class="skill-card">
+          <span class="skill-number">01</span>
+          <h3 class="font-display">CLOUD</h3>
+          <p>AWS infrastructure, deployments, monitoring, identity, and core cloud services.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">02</span>
+          <h3 class="font-display">NETWORK</h3>
+          <p>IP networking, routing, DNS, reverse proxies, segmentation, and infrastructure design.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">03</span>
+          <h3 class="font-display">DEVOPS</h3>
+          <p>Git, Docker, Linux, Terraform, automation, and repeatable deployment workflows.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">04</span>
+          <h3 class="font-display">SECURITY</h3>
+          <p>Infrastructure hardening, vulnerability management, identity, and secure operations.</p>
+        </div>
+      </div>
+
+      <div class="overflow-hidden border-x border-b border-black/10">
+        <div class="tech-track flex w-max items-center gap-6 px-6 py-5 text-[10px] font-bold tracking-[.15em]">
+          <span>AWS</span><b>✦</b><span>LINUX</span><b>✦</b><span>PYTHON</span><b>✦</b>
+          <span>TERRAFORM</span><b>✦</b><span>DOCKER</span><b>✦</b><span>GIT</span><b>✦</b>
+          <span>NETWORKING</span><b>✦</b><span>AUTOMATION</span><b>✦</b>
+          <span>AWS</span><b>✦</b><span>LINUX</span><b>✦</b><span>PYTHON</span><b>✦</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-t border-black/10 bg-[#ecebe6]">
+      <div class="mx-auto max-w-[1380px] px-5 py-24 sm:px-8 lg:px-12 lg:py-40">
+        <div class="section-head" data-reveal>
+          <span class="section-num">05</span>
+          <div>
+            <p class="eyebrow mb-5">EXPERIENCE</p>
+            <h2 class="font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.88] tracking-[-.07em]">
+              Building from<br>
+              <span class="serif-italic font-normal">the ground up.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="divide-y divide-black/10 border-t border-black/10" data-reveal>
+          <article class="grid gap-6 py-10 md:grid-cols-[120px_26px_1fr]">
+            <div class="text-[9px] font-bold tracking-[.14em] text-black/40">CURRENT</div>
+            <div class="relative">
+              <span class="mt-1 block size-2.5 rounded-full border border-black bg-[#ecebe6]"></span>
+              <span class="absolute left-[4px] top-4 h-[calc(100%+40px)] w-px bg-black/10"></span>
+            </div>
+            <div>
+              <p class="eyebrow mb-3">U.S. AIR FORCE — IT / CYBER OPERATIONS</p>
+              <h3 class="font-display text-3xl font-semibold tracking-[-.05em] sm:text-4xl">Infrastructure & Endpoint Operations</h3>
+              <p class="mt-4 max-w-3xl text-[14px] leading-7 text-black/55">
+                Enterprise IT support, vulnerability management, endpoint security,
+                account administration, and operational troubleshooting in a large-scale environment.
+              </p>
+            </div>
+          </article>
+
+          <article class="grid gap-6 py-10 md:grid-cols-[120px_26px_1fr]">
+            <div class="text-[9px] font-bold tracking-[.14em] text-black/40">EDUCATION</div>
+            <div class="relative">
+              <span class="mt-1 block size-2.5 rounded-full border border-black bg-[#ecebe6]"></span>
+            </div>
+            <div>
+              <p class="eyebrow mb-3">WESTERN GOVERNORS UNIVERSITY</p>
+              <h3 class="font-display text-3xl font-semibold tracking-[-.05em] sm:text-4xl">Cloud & Network Engineering</h3>
+              <p class="mt-4 max-w-3xl text-[14px] leading-7 text-black/55">
+                AWS-focused coursework with networking, Linux, security, cloud architecture,
+                deployment, and IT operations certifications.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-7 flex flex-wrap gap-2" data-reveal>
+          <span class="black-chip">SECURITY+</span>
+          <span class="black-chip">NETWORK+</span>
+          <span class="black-chip">AWS CLOUD</span>
+          <span class="black-chip">LINUX</span>
+          <span class="black-chip">ITIL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mx-auto max-w-[1380px] px-5 pb-8 pt-24 sm:px-8 lg:px-12 lg:pt-32">
+      <div class="contact-panel relative overflow-hidden bg-[#101010] px-6 py-16 text-[#f4f3ef] sm:px-10 lg:px-20 lg:py-24" data-reveal>
+        <div class="contact-rings pointer-events-none absolute -right-20 -top-32 size-[500px] rounded-full border border-white/10"></div>
+        <div class="contact-rings pointer-events-none absolute -right-20 -top-32 size-[570px] rounded-full border border-white/[.04]"></div>
+        <div class="contact-word pointer-events-none absolute right-[4%] top-[18%] font-display text-[clamp(5rem,17vw,15rem)] font-bold leading-none tracking-[-.1em] text-white/[.035]">
+          CONNECT
+        </div>
+
+        <div class="relative z-10 grid gap-16 lg:grid-cols-[1fr_320px] lg:items-end">
+          <div>
+            <p class="eyebrow mb-5 text-white/55">06 / GET IN TOUCH</p>
+            <h2 class="font-display max-w-4xl text-[clamp(3.4rem,8vw,7.5rem)] font-semibold leading-[.84] tracking-[-.075em]">
+              Let's build something<br>
+              <span class="serif-italic font-normal">worth shipping.</span>
+            </h2>
+            <p class="mt-7 max-w-xl text-[14px] leading-7 text-white/45">
+              Open to cloud, network, infrastructure, DevOps, and platform engineering opportunities.
+            </p>
+          </div>
+
+          <div class="grid gap-3">
+            <a href="mailto:brayden2004knight@gmail.com" class="magnetic-button flex items-center justify-between border border-white bg-[#f4f3ef] px-5 py-4 text-[10px] font-bold tracking-[.13em] text-black transition hover:-translate-y-0.5">
+              EMAIL ME <span>↗</span>
+            </a>
+            <a href="https://github.com/Brayden-Knight" target="_blank" rel="noreferrer" class="contact-link">
+              GITHUB <span>↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/brayden-knight-b5374a363/" target="_blank" rel="noreferrer" class="contact-link">
+              LINKEDIN <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="flex flex-col justify-between gap-3 py-6 text-[8px] font-bold tracking-[.14em] text-black/40 sm:flex-row">
+        <span>© 2026 BRAYDEN KNIGHT</span>
+        <span>BUILT FOR THE WEB / GITHUB PAGES</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
